@@ -11,3 +11,10 @@ output:
 
 ## Project thoughts
 Does the percentage of Fox news viewers in low income towns of swing states directly correlate to Republican votes in presidential elections? In this study, I plan to look at the effects of right leaning news on election results.  I hypothesize that in the year 2000, the higher percentage of Fox News subscribers in swing states the higher the percentage of Republican votes, due to Fox News’ right leaning, particularly in low income towns, as Fox promotes the idea of the GOP as a working class party. Using the foxnews.csv data set, I plan to specifically focus on swing states, as they change more from election cycle to election cycle. My sample will be composed of towns in Pennsylvania, Ohio, and Wisconsin in which the median income was lower than the national median in 2000–  $42,148. My unit of analysis is the percentage of GOP votes in the year 2000. My data will simplify and compare the percentage of GOP votes to the Fox News viewership. The variable will be coded =1 for a majority republican vote, and =0 for a majority democrat vote. If the majority of the towns researched vote GOP, my hypothesis will be proven, if the majority votes democrat, it will be disproven. 
+
+
+```{r}
+library(tidyverse)
+read_csv("data/foxnews.csv") 
+```
+
